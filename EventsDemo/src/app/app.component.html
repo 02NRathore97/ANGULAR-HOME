@@ -1,0 +1,56 @@
+<h1>App Component</h1>
+
+
+<!-- click event -->
+<!-- <button (click)="getName()">click me</button> -->
+
+<!-- clickevent with parameter -->
+<!-- <button (click)="getName('Neeraj')">click me</button> -->
+<!-- <button (click)="myEvent('click event')">click me</button> -->
+
+<!-- click evetn with property -->
+<!-- <button (click)="getName(YourName)">click me</button> -->
+
+
+<!-- keyup event -->
+<!-- <input type="text" (keyup)="myEvent('click event')"/> -->
+
+<!-- keyup event with field value -->
+<!-- <input type="text" #box (keyup)="myEvent(box.value)"/> -->
+
+<!-- keyup event with enter event with field value -->
+<!-- <input type="text" #box (keyup.enter)="myEvent(box.value)"/> -->
+
+<!-- keyup event with space with field value -->
+<!-- <input type="text" #box (keyup.space)="myEvent(box.value)"/> -->
+
+<!-- keydown event with field value -->
+<!-- <input type="text" #box (keydown)="myEvent(box.value)"/> -->
+
+<!-- blur event  -->
+<!-- <input type="text"  (blur)="myEvent('blur event')"/> -->
+
+<!-- mouseover event -->
+<!-- <div  (mouseover)="myEvent('mouse in ')" style="background-color: aqua;">mouse</div> -->
+
+<!-- mouseleave event -->
+<!-- <div  (mouseleave)="myEvent('mouse out')" style="background-color: aqua;">mouse</div> -->
+
+<!-- mouseover with mouseleave event at the same time -->
+<!-- <div  (mouseleave)="myEvent('mouse out')" (mouseover)="myEvent('mouse in')" style="background-color: aqua;">mouse</div> -->
+
+
+
+
+
+
+
+<!-- get textbox value -->
+<!-- <input type="text"  (keyup)="getValue($event.target.value)"/>
+<h1>current value =  {{currentVal}}</h1> -->
+
+
+<!-- get textbox value on button click -->
+<input type="text" #box/>
+<button (click)="getValue(box.value)">Get value</button>
+<h1>{{currentVal}}</h1>

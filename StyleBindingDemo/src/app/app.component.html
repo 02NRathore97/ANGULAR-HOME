@@ -1,0 +1,17 @@
+<h1>App Component</h1>
+
+<h1 style="color: red;">Style Binding</h1>
+
+<h1 [style.color]="'green'">Style Binding</h1>
+<h1 [style.backgroundColor]="'yellow'">Style Binding</h1>
+
+<!-- style binding -->
+<h1 [style.color]="color">Style Binding</h1>
+
+
+<!-- style binding with button -->
+<button (click)="updateColor()">update color</button>
+
+
+<!-- conditional style binding -->
+<h1 [style.color]="err?'red':'green'">Style Binding</h1>

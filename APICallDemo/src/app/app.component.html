@@ -1,0 +1,14 @@
+<h1>App Component</h1>
+
+<table border="1">
+    <tr>
+        <td>ID</td>
+        <td>TITLE</td>
+        <td>USERID</td>
+    </tr>
+    <tr *ngFor="let item of data">
+        <td>{{item.id}}</td>
+        <td>{{item.title}}</td>
+        <td>{{item.userId}}</td>
+    </tr>
+</table>

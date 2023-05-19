@@ -1,0 +1,10 @@
+<h1>App Component</h1>
+<form [formGroup]="loginForm">
+    <input type="text" formControlName="email" >
+    <span class="redColor" *ngIf="email.invalid && email.touched">Email field id required</span>
+    <br><br>
+    <input type="password" formControlName="password">
+    <span class="redColor" *ngIf="password.invalid && password.touched">Password field id required</span>
+    <br><br>
+    <button type="submit">Login</button>
+</form>

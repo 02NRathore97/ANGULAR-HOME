@@ -1,0 +1,10 @@
+<h1>App Component</h1>
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+  <input type="text" name="email" required ngModel #email="ngModel">
+  <span class="error" *ngIf="email.invalid && email.touched">Email is required</span>
+  <br><br>
+  <input type="password" name="password" required ngModel #password="ngModel">
+  <span class="error" *ngIf="password.invalid && password.touched">Password is required</span>
+  <br><br>
+  <button type="submit">Login</button>
+</form>

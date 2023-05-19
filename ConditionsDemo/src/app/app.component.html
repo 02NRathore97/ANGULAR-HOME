@@ -1,0 +1,51 @@
+<h1>App Component</h1>
+
+
+<!-- if Condition -->
+<!-- <h1 *ngIf="show">
+    if block
+</h1> -->
+
+
+
+<!-- if else Condition -->
+<!-- <h1 *ngIf="show else elseBlock">
+  if block
+</h1>
+
+<ng-template #elseBlock>
+<h1>else block</h1>
+</ng-template> -->
+
+
+
+
+<!-- if else Condition -->
+<!-- <h1 *ngIf="show=='yes' else elseBlock">
+  if block
+</h1>
+
+<ng-template #elseBlock>
+<h1>else block</h1>
+</ng-template> -->
+
+
+<!-- if else then  -->
+<!-- <h1 *ngIf="show=='yes'; then ifBlock else elseBlock"></h1>
+<ng-template #ifBlock>
+  <h1>if block</h1>
+  </ng-template>
+<ng-template #elseBlock>
+<h1>else block</h1>
+</ng-template> -->
+
+
+<ng-template [ngIf]="show=='red'">
+  <h1>Red Block</h1>
+</ng-template>
+<ng-template [ngIf]="show=='green'">
+  <h1>Green Block</h1>
+</ng-template>
+<ng-template [ngIf]="show=='yellow'">
+  <h1>Yellow Block</h1>
+</ng-template>

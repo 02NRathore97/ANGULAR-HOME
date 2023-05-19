@@ -1,0 +1,9 @@
+<h1>App Component</h1>
+
+<form #userForm="ngForm" >
+  <input type="text" name="email" placeholder="email" [ngModel]="userData.email"><br><br>
+  <input type="password" name="password" placeholder="password" [ngModel]="userData.password"><br><br>
+  <input type="text" name="address" placeholder="address" [ngModel]="userData.address"><br><br>
+  <input type="text" name="mobile" placeholder="mobile"[ngModel]="userData.mobile"><br><br>
+  <button type="submit">Login</button>
+</form>
